@@ -1,0 +1,38 @@
+# Media Share Hub
+
+A simple but modern media sharing website for storing and sharing games, movies, apps, music, and files.
+
+## Features
+
+- Upload media items with a title, type, category, and description
+- Browse and search through your library
+- Share content with a direct share link
+- Download uploaded files from your own local storage
+- Works well for personal or family use
+
+## Tech stack
+
+- Node.js
+- Express.js
+- Multer
+- Static frontend HTML/CSS/JavaScript
+
+## Run locally
+
+1. Install dependencies:
+   npm install
+2. Start the app:
+   npm start
+3. Open in browser:
+   http://localhost:3000
+
+## Project structure
+
+- `server.js` - backend and API
+- `public/` - frontend UI files
+- `uploads/` - uploaded files are stored here
+- `data/media.json` - metadata for all uploaded media
+
+## Notes
+
+This project is designed as a practical starter for a personal media-sharing website. It is a strong base for future upgrades like user login, database storage, cloud hosting, or admin panels.

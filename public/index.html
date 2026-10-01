@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Share Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo-wrap">
+          <div class="logo">MS</div>
+          <div>
+            <p class="brand">Media Share Hub</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#library">Library</a>
+          <a href="#upload">Upload</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Storage • Sharing • Easy access</span>
+            <h1>Keep your games, movies, apps, and files in one smart place.</h1>
+            <p>
+              Share your favorite media with family and friends anywhere in Pakistan,
+              whether they are in Karachi, Swat, or anywhere else.
+            </p>
+            <div class="hero-actions">
+              <a href="#upload" class="primary-btn">Upload media</a>
+              <a href="#library" class="secondary-btn">Browse library</a>
+            </div>
+            <ul class="stats">
+              <li><strong>100%</strong><span>Private sharing</span></li>
+              <li><strong>Fast</strong><span>Easy access</span></li>
+              <li><strong>Smart</strong><span>Organized library</span></li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="mini-panel">
+              <div class="panel-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="panel-body">
+                <div class="stack-item">
+                  <label>Games</label>
+                  <strong>18 saved</strong>
+                </div>
+                <div class="stack-item">
+                  <label>Movies</label>
+                  <strong>12 saved</strong>
+                </div>
+                <div class="stack-item">
+                  <label>Files</label>
+                  <strong>26 saved</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="library" id="library">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Your collection</span>
+              <h2>Media library</h2>
+            </div>
+            <div class="toolbar">
+              <input id="searchInput" type="search" placeholder="Search media..." />
+              <select id="filterCategory">
+                <option value="all">All categories</option>
+                <option value="Games">Games</option>
+                <option value="Movies">Movies</option>
+                <option value="Apps">Apps</option>
+                <option value="Files">Files</option>
+                <option value="Music">Music</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="mediaGrid" class="media-grid"></div>
+        </div>
+      </section>
+
+      <section class="upload" id="upload">
+        <div class="container upload-grid">
+          <div>
+            <span class="eyebrow">Upload new media</span>
+            <h2>Add games, movies, apps, or files</h2>
+            <p>
+              Upload anything you want to store and then share it with friends and family using a copied link.
+            </p>
+          </div>
+
+          <form id="uploadForm" class="upload-form">
+            <div class="field-row">
+              <label>
+                Title
+                <input type="text" name="title" placeholder="Example: FIFA 2025" required />
+              </label>
+            </div>
+
+            <div class="field-row two-col">
+              <label>
+                Type
+                <select name="type" required>
+                  <option value="Game">Game</option>
+                  <option value="Movie">Movie</option>
+                  <option value="App">App</option>
+                  <option value="Music">Music</option>
+                  <option value="File">File</option>
+                </select>
+              </label>
+
+              <label>
+                Category
+                <select name="category" required>
+                  <option value="Games">Games</option>
+                  <option value="Movies">Movies</option>
+                  <option value="Apps">Apps</option>
+                  <option value="Music">Music</option>
+                  <option value="Files">Files</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Description
+                <textarea name="description" rows="4" placeholder="Tell people what this file is about..."></textarea>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Upload file
+                <input type="file" name="file" />
+              </label>
+            </div>
+
+            <button type="submit" class="primary-btn full">Save item</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-box">
+          <div>
+            <span class="eyebrow">Why this works</span>
+            <h2>Perfect for sharing with family and friends</h2>
+          </div>
+          <div class="about-points">
+            <div>
+              <h3>Store things centrally</h3>
+              <p>Keep games, movies, apps, and other files in one clean library.</p>
+            </div>
+            <div>
+              <h3>Share via link</h3>
+              <p>Send a direct share link to anyone without needing complex setup.</p>
+            </div>
+            <div>
+              <h3>Easy to manage</h3>
+              <p>Search, filter, and upload content from a simple dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© 2026 Media Share Hub</p>
+        <p>Built for fast digital sharing</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
